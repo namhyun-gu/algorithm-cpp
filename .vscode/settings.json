@@ -1,0 +1,21 @@
+{
+  "files.associations": {
+    "*.tcc": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "typeinfo": "cpp",
+    "iostream": "cpp",
+    "cmath": "cpp",
+    "fstream": "cpp",
+    "iosfwd": "cpp",
+    "type_traits": "cpp"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "python.pythonPath": "/usr/bin/python3"
+}
