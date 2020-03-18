@@ -1,6 +1,6 @@
 import os
 
-exclude_list = [".git", ".vscode"]
+exclude_list = [".git", ".vscode", ".clang-format"]
 
 def search_executables(path: str):
   file_list = os.listdir(path)
