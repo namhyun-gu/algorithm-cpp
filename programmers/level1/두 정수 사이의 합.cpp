@@ -11,8 +11,7 @@ long long solution(int a, int b) {
     long long s, e, sum = 0;
     s = a < b ? a : b;
     e = a < b ? b : a;
-    for (long long i = s; i <= e; i++)
-      sum += i;
+    for (long long i = s; i <= e; i++) sum += i;
     answer = sum;
   }
   return answer;

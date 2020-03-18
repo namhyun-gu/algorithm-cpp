@@ -5,8 +5,7 @@ using namespace std;
 
 vector<string> slice(string s, int length) {
   vector<string> v;
-  for (int i = 0; i < s.size(); i += length)
-    v.push_back(s.substr(i, length));
+  for (int i = 0; i < s.size(); i += length) v.push_back(s.substr(i, length));
   return v;
 }
 
@@ -18,27 +17,31 @@ string compress(vector<string> v) {
       list.push_back(s);
     } else {
       int cnt = list.size();
-      if (cnt > 1) result.append(to_string(cnt) + list.back());
-      else result.append(list.back());
+      if (cnt > 1)
+        result.append(to_string(cnt) + list.back());
+      else
+        result.append(list.back());
       list.clear();
       list.push_back(s);
     }
   }
   int cnt = list.size();
-  if (cnt > 1) result.append(to_string(cnt) + list.back());
-  else result.append(list.back());
+  if (cnt > 1)
+    result.append(to_string(cnt) + list.back());
+  else
+    result.append(list.back());
   return result;
 }
 
 int solution(string s) {
-    int answer = s.size();
-    for (int i = 1; i < s.size(); i++) {
-      vector<string> v = slice(s, i);
-      string compreess_result = compress(v);
-      int tmp = compreess_result.size();
-      if (tmp < answer) answer = tmp;
-    }
-    return answer;
+  int answer = s.size();
+  for (int i = 1; i < s.size(); i++) {
+    vector<string> v = slice(s, i);
+    string compreess_result = compress(v);
+    int tmp = compreess_result.size();
+    if (tmp < answer) answer = tmp;
+  }
+  return answer;
 }
 
 #include <iostream>

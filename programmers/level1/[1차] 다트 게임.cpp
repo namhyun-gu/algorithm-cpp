@@ -50,18 +50,17 @@ int solution(string dartResult) {
     }
     s->result = point;
   }
-  for (stage s : stages)
-    answer += s.result;
+  for (stage s : stages) answer += s.result;
   return answer;
 }
 
 #include <iostream>
 main() {
-  cout << solution("1S2D*3T") << endl;  // 37
-  cout << solution("1D2S#10S") << endl; // 9
-  cout << solution("1D2S0T") << endl;   // 3
-  cout << solution("1S*2T*3S") << endl; // 23
-  cout << solution("1D#2S*3S") << endl; // 5
-  cout << solution("1T2D3D#") << endl;  // -4
-  cout << solution("1D2S3T*") << endl;  // 59
+  cout << solution("1S2D*3T") << endl;   // 37
+  cout << solution("1D2S#10S") << endl;  // 9
+  cout << solution("1D2S0T") << endl;    // 3
+  cout << solution("1S*2T*3S") << endl;  // 23
+  cout << solution("1D#2S*3S") << endl;  // 5
+  cout << solution("1T2D3D#") << endl;   // -4
+  cout << solution("1D2S3T*") << endl;   // 59
 }

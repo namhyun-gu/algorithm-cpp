@@ -30,8 +30,7 @@ string solution(string s) {
         answer += (c >= 'A' && c <= 'Z') ? c + 32 : c;
       }
     }
-    if (i < split.size() - 1)
-      answer += ' ';
+    if (i < split.size() - 1) answer += ' ';
   }
   return answer;
 }

@@ -17,8 +17,7 @@ int solution(string skill, vector<string> skill_trees) {
 
     bool valid = true;
     for (char c : skill_tree) {
-      if (!in_skill[c - 'A'])
-        continue;
+      if (!in_skill[c - 'A']) continue;
 
       if (c == skill_queue.back()) {
         skill_queue.pop_back();
@@ -27,8 +26,7 @@ int solution(string skill, vector<string> skill_trees) {
       }
     }
 
-    if (valid)
-      answer++;
+    if (valid) answer++;
     skill_queue.clear();
   }
   return answer;
@@ -37,5 +35,5 @@ int solution(string skill, vector<string> skill_trees) {
 #include <iostream>
 main() {
   cout << solution("CBD", vector<string>{"BACDE", "CBADF", "AECB", "BDA"})
-       << endl; // 2
+       << endl;  // 2
 }

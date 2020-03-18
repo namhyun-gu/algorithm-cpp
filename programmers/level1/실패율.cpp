@@ -12,8 +12,7 @@ vector<int> solution(int N, vector<int> stages) {
   fill_n(tried, N + 1, 0);
 
   for (int i = 0; i < stages.size(); i++) {
-    if (stages[i] != N + 1)
-      tried[stages[i]]++;
+    if (stages[i] != N + 1) tried[stages[i]]++;
     for (int j = 1; j < stages[i]; j++) {
       cleared[j]++;
       tried[j]++;
@@ -45,7 +44,6 @@ main() {
     cout << i << " ";
   cout << std::endl;
 
-  for (auto i : solution(4, vector<int>{4, 4, 4, 4, 4}))
-    cout << i << " ";
+  for (auto i : solution(4, vector<int>{4, 4, 4, 4, 4})) cout << i << " ";
   cout << std::endl;
 }

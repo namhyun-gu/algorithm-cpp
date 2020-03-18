@@ -19,5 +19,5 @@ string solution(int a, int b) {
 #include <iostream>
 
 int main() {
-  cout << solution(5, 24) << endl; // "TUE"
+  cout << solution(5, 24) << endl;  // "TUE"
 }

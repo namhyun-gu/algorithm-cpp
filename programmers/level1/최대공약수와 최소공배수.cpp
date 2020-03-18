@@ -28,11 +28,9 @@ vector<int> solution(int n, int m) {
 
 #include <iostream>
 main() {
-  for (auto i : solution(3, 12))
-    cout << i << " ";
+  for (auto i : solution(3, 12)) cout << i << " ";
   cout << endl;
 
-  for (auto i : solution(2, 5))
-    cout << i << " ";
+  for (auto i : solution(2, 5)) cout << i << " ";
   cout << endl;
 }

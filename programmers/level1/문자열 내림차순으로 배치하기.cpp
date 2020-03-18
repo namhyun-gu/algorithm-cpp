@@ -7,11 +7,9 @@ using namespace std;
 string solution(string s) {
   string answer = "";
   vector<char> chars;
-  for (char c : s)
-    chars.push_back(c);
+  for (char c : s) chars.push_back(c);
   sort(chars.begin(), chars.end(), greater<char>());
-  for (char c : chars)
-    answer += c;
+  for (char c : chars) answer += c;
   return answer;
 }
 

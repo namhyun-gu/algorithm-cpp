@@ -7,8 +7,7 @@ int solution(int num) {
   int answer = 0;
   long n = (long)num;
   while (n != 1) {
-    if (answer == 500)
-      break;
+    if (answer == 500) break;
     if (n % 2)
       n = n * 3 + 1;
     else
@@ -22,7 +21,7 @@ int solution(int num) {
 // 되기때문에 결과가 488이 나옴.
 #include <iostream>
 main() {
-  cout << solution(6) << endl;      // 8
-  cout << solution(16) << endl;     // 4
-  cout << solution(626331) << endl; // -1
+  cout << solution(6) << endl;       // 8
+  cout << solution(16) << endl;      // 4
+  cout << solution(626331) << endl;  // -1
 }

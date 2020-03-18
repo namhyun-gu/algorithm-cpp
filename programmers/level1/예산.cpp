@@ -23,6 +23,6 @@ int solution(vector<int> d, int budget) {
 
 #include <iostream>
 main() {
-  cout << solution(vector<int>{1, 3, 2, 5, 4}, 9) << endl; // 3
-  cout << solution(vector<int>{2, 2, 3, 3}, 10) << endl;   // 4
+  cout << solution(vector<int>{1, 3, 2, 5, 4}, 9) << endl;  // 3
+  cout << solution(vector<int>{2, 2, 3, 3}, 10) << endl;    // 4
 }

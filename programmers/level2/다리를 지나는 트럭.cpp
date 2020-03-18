@@ -31,9 +31,9 @@ int solution(int bridge_length, int weight, vector<int> truck_weights) {
 
 #include <iostream>
 main() {
-  cout << solution(2, 10, vector<int>{7, 4, 5, 6}) << endl; // 8
-  cout << solution(100, 100, vector<int>{10}) << endl;      // 101
+  cout << solution(2, 10, vector<int>{7, 4, 5, 6}) << endl;  // 8
+  cout << solution(100, 100, vector<int>{10}) << endl;       // 101
   cout << solution(100, 100,
                    vector<int>{10, 10, 10, 10, 10, 10, 10, 10, 10, 10})
-       << endl; // 110
+       << endl;  // 110
 }

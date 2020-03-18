@@ -16,6 +16,6 @@ string solution(string s) {
 #include <iostream>
 
 int main() {
-  cout << solution("abcde") << endl; // "c"
-  cout << solution("qwer") << endl;  // "we"
+  cout << solution("abcde") << endl;  // "c"
+  cout << solution("qwer") << endl;   // "we"
 }

@@ -13,6 +13,6 @@ int solution(int n) {
 
 #include <iostream>
 main() {
-  cout << solution(123) << endl; // 6
-  cout << solution(987) << endl; // 24
+  cout << solution(123) << endl;  // 6
+  cout << solution(987) << endl;  // 24
 }

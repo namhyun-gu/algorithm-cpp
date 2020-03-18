@@ -16,6 +16,6 @@ long long solution(long long n) {
 
 #include <iostream>
 main() {
-  cout << solution(121) << endl; // 144
-  cout << solution(3) << endl;   // -1
+  cout << solution(121) << endl;  // 144
+  cout << solution(3) << endl;    // -1
 }

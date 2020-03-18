@@ -15,15 +15,12 @@ vector<long long> solution(int x, int n) {
 
 #include <iostream>
 main() {
-  for (auto i : solution(2, 5))
-    cout << i << " ";
+  for (auto i : solution(2, 5)) cout << i << " ";
   cout << endl;
 
-  for (auto i : solution(4, 3))
-    cout << i << " ";
+  for (auto i : solution(4, 3)) cout << i << " ";
   cout << endl;
 
-  for (auto i : solution(-4, 2))
-    cout << i << " ";
+  for (auto i : solution(-4, 2)) cout << i << " ";
   cout << endl;
 }

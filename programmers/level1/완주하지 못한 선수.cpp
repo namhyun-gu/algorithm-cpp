@@ -1,6 +1,6 @@
+#include <map>
 #include <string>
 #include <vector>
-#include <map>
 
 using namespace std;
 
@@ -15,7 +15,8 @@ string solution(vector<string> participant, vector<string> completion) {
   for (string s : completion) {
     participantMap[s] = participantMap[s] - 1;
   }
-  for (map<string, int>::iterator it = participantMap.begin(); it != participantMap.end(); it++) {
+  for (map<string, int>::iterator it = participantMap.begin();
+       it != participantMap.end(); it++) {
     if (it->second > 0) {
       answer = it->first;
     }

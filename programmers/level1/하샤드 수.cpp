@@ -15,8 +15,8 @@ bool solution(int x) {
 
 #include <iostream>
 main() {
-  cout << solution(10) << endl; // true
-  cout << solution(12) << endl; // true
-  cout << solution(11) << endl; // false
-  cout << solution(13) << endl; // false
+  cout << solution(10) << endl;  // true
+  cout << solution(12) << endl;  // true
+  cout << solution(11) << endl;  // false
+  cout << solution(13) << endl;  // false
 }
