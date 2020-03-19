@@ -21,5 +21,6 @@ def search_executables(path: str):
 executables = search_executables(".")
 for executable_path in executables:
   os.remove(executable_path)
+  os.system(f"git add {executable_path}")
 
 print(f"{len(executables)} files removed.")
