@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "[INFO] Formatting sources"
+sources=$(git diff --exit-code --cached --name-only --diff-filter=ACM -- '*.cpp')
+
+for source in $sources
+do
+  clang-format-10 -style=file -i --verbose $source
+  git add $source
+done
+
+echo "[INFO] Remove executables"
+python3 scripts/remove-executables.py
