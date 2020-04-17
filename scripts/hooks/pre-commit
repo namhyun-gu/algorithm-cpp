@@ -9,4 +9,4 @@ do
 done
 
 echo "[INFO] Remove executables"
-python3 scripts/remove-executables.py
+kotlinc -script scripts/remove_executables.kts
