@@ -1,3 +1,27 @@
 {
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.out": true,
+  },
+  "files.associations": {
+    "*.tcc": "cpp",
+    "fstream": "cpp",
+    "iosfwd": "cpp",
+    "type_traits": "cpp",
+    "algorithm": "cpp",
+    "initializer_list": "cpp",
+    "shared_mutex": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "string_view": "cpp",
+    "tuple": "cpp",
+    "ostream": "cpp",
+    "iostream": "cpp"
+  }
 }
