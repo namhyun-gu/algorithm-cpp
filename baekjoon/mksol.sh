@@ -13,6 +13,7 @@ touch $1/input.txt
 echo "Created $1/input.txt"
 echo "#include <bits/stdc++.h>
 using namespace std;
-main() {
+
+int main() {
 }" > $1/solution.cpp
 echo "Created $1/solution.cpp"
